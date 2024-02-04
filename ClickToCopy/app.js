@@ -6,4 +6,7 @@ btn.addEventListener("click",(e)=>{
     coupon.setSelectionRange(0,999999)
     navigator.clipboard.writeText(coupon.value)
     btn.textContent="Copied"
+    setTimeout(()=>{
+        btn.textContent="Copy"
+    },3000)
 })
